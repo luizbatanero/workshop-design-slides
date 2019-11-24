@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Design para Devs</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/rocketseat.css">
+		<link rel="stylesheet" href="lib/css/dracula.css">
+
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<img src="img/luiz.png" class="plain" alt="Luiz Batanero" style="width:120px; border-radius: 50%">
+					<h3>Luiz Batanero</h3>
+					<small>
+						<a target="_blank" href="https://github.com/luizbatanero">github.com/luizbatanero</a>
+					</small>
+				</section>
+
+				<section>
+					<blockquote class="fragment shrink" data-fragment-index="1">
+						"Sou programador então não levo jeito pra design"
+					</blockquote>
+					<h2 class="fragment" style="color: #ff5a4e" data-fragment-index="1">MITO</h2>
+				</section>
+				<section data-background-image="img/youcandoit.gif" data-background-size="800px"></section>
+
+				<section>
+					<h1 style="line-height: .9">
+						<span style="color: #04D361">Design</span><br>
+						<small>para&nbsp;</small>Devs
+					</h1>
+				</section>
+
+				<section>
+					<h2 class="section-title">
+						<span>01.</span>
+						Composição
+					</h2>
+				</section>
+				<section><p>Hierarquia</p></section>
+				<section data-background-image="img/hierarquia-1.png" data-background-size="contain"></section>
+				<section data-background-image="img/hierarquia-2.png" data-background-size="contain"></section>
+				<section data-background-image="img/hierarquia-3.png" data-background-size="contain"></section>
+				<section><p>Proximidade</p></section>
+				<section data-background-image="img/proximidade-1.png" data-background-size="contain"></section>
+				<section data-background-image="img/proximidade-2.png" data-background-size="contain"></section>
+				<section><p>Espaçamento</p></section>
+				<section data-background-image="img/espacamento-1.png" data-background-size="contain"></section>
+				<section data-background-image="img/espacamento-2.png" data-background-size="contain"></section>
+				<section><p>Alinhamento</p></section>
+				<section data-background-image="img/alinhamento-1.png" data-background-size="contain"></section>
+				<section data-background-image="img/alinhamento-2.png" data-background-size="contain"></section>
+				<section data-background-image="img/alinhamento-3.png" data-background-size="contain"></section>
+				<section data-background-image="img/alinhamento-4.png" data-background-size="contain"></section>
+				<section data-background-image="img/repeticao.png" data-background-size="contain"></section>
+
+				<section>
+					<h2 class="section-title">
+						<span>02.</span>
+						Cores
+					</h2>
+				</section>
+				<section data-background-image="img/paletas.png" data-background-size="contain"></section>
+				<section>
+					<img class="plain" src="img/adobecolor.png" alt="">
+					<a target="_blank" href="https://color.adobe.com/">
+						<small>https://color.adobe.com/</small>
+					</a>
+				</section>
+				<section>
+					<img class="plain" src="img/coolors.png" alt="">
+					<a target="_blank" href="https://coolors.co/app">
+						<small>https://coolors.co/app</small>
+					</a>
+				</section>
+				<section>
+					<img class="plain" src="img/colorable.png" alt="">
+					<a target="_blank" href="https://colorable.jxnblk.com">
+						<small>https://colorable.jxnblk.com</small>
+					</a>
+				</section>
+				<section>
+					<pre><code class="css" data-trim data-noescape>
+						:root {
+						  --primaryColor: #7159c1;
+						}
+
+						body {
+						  background: var(--primaryColor);
+						}
+					</code></pre>
+				</section>
+
+				<section>
+					<h2 class="section-title">
+						<span>03.</span>
+						Tipografia
+					</h2>
+				</section>
+				<section data-background-image="img/tipografia.png" data-background-size="contain"></section>
+				<section>
+					<img class="plain" src="img/googlefonts.png" alt="">
+					<a target="_blank" href="http://fonts.google.com">
+						<small>http://fonts.google.com</small>
+					</a>
+				</section>
+				<section>
+					<img class="plain" src="img/fontsquirrel.png" alt="">
+					<a target="_blank" href="https://www.fontsquirrel.com/tools/webfont-generator">
+						<small>https://www.fontsquirrel.com/tools/webfont-generator</small>
+					</a>
+				</section>
+				<section style="text-align:left">
+					<ul>
+						<li class="fragment">Duas fontes</li>
+						<li class="fragment">Evitar fontes parecidas</li>
+						<li class="fragment">
+							Display + Sans-serif<br>
+							<small style="vertical-align: middle">ou</small>
+							Serif + Sans-serif
+						</li>
+						<li class="fragment">Parágrafo com 45 a 90 caracteres</li>
+						<li class="fragment">
+							<code>line-height</code><br>
+							1.25 para títulos e 1.5 para parágrafos
+						</li>
+					</ul>
+				</section>
+				<section>
+					<img class="plain" src="img/tipografia-espacamento.png" alt="">
+				</section>
+				<section>
+					<img class="plain" src="img/fontjoy.png" alt="">
+					<a target="_blank" href="https://fontjoy.com/">
+						<small>https://fontjoy.com/</small>
+					</a>
+				</section>
+
+				<section>
+					<h2 class="section-title">
+						<span>04.</span>
+						Inspiração
+					</h2>
+				</section>
+				<section>
+					<p><a target="_blank" href="https://dribbble.com/">Dribbble</a></p>
+					<p><a target="_blank" href="https://www.calltoidea.com/">Calltoidea</a></p>
+					<p><a target="_blank" href="http://collectui.com/">Collect UI</a></p>
+					<p><a target="_blank" href="https://tympanus.net/codrops/">Codrops</a></p>
+					<p><a target="_blank" href="https://www.awwwards.com/">Awwwards</a></p>
+				</section>
+			</div>
+
+			<img class="logo" src="img/rocket.svg" alt="Rocketseat">
+		</div>
+
+		<script src="js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+				controls: false,
+				transition: 'fade',
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
